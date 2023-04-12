@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+  position: relative;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* NOTIFICATION SECTION */
+.overlayBg {
+  background-color: red transparent;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0 auto;
+}
+.menu-drop-down {
+  background-color: #fff;
+  line-height: 2;
+  width: 300%;
+  border-radius: 9px;
+  position: absolute;
+  top: 32px;
+  right: 77px;
+  box-shadow: 0 4px 6px 3px rgba(0, 0, 13, 0.144);
+  font-size: 0.8rem;
+}
+.messageDrop-down-noti {
+  font-style: italic;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #555;
+}
+.notification-section-con {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 11px;
+  padding: 2rem;
+  margin-top: 5%;
+}
+.massagies-wrap {
+  margin-top: 2rem;
+}
+.notification-search {
+  position: fixed;
+  background-color: #b5dadf54;
+  width: 71%;
+  padding: 1rem;
+  line-height: 0;
+  border-radius: 11px;
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(90px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(90px);
+}
+.mail-inpute-search {
+  background-color: #fff;
+}
+.notification-main-con {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 11px;
+  margin-top: 6rem;
+}
+.mail-section-tag {
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  position: sticky;
+  font-weight: 600;
+  color: #333;
+}
+
+.mail-box {
+  font-size: 1.4rem;
+  color: orange;
+  margin-right: 0.5rem;
+}
+.mails-con {
+  background-color: #fff;
+  width: 100%;
+}
+.vertical-menu,
+.refresh-icon {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.search-menu-icon-con {
+  display: flex;
+  gap: 1.6rem;
+  position: relative;
+}
+
+.refresh-icon:active,
+.vertical-menu:active {
+  padding: 0.5rem;
+  border-radius: 100px;
+  border: solid 1px #6666;
+  background-color: #fff;
+}
+.menu-drop-down-info1 {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1rem 0;
+  border-bottom: 1px solid #999;
+  font-size: 1rem;
+}
+.checkBox {
+  height: 1.2rem;
+  width: 1.2rem;
+  border: #e7e7e75e;
+}
+.senderName {
+  font-size: 0.8rem;
+  color: #555;
+}
+.messageSumary {
+  font-size: 0.8rem;
+  color: #555;
+}
+.trashBin-icon {
+  font-size: 0.8rem;
+  color: #555;
+}
+.mailTime {
+  font-size: 0.6rem;
+  color: #555;
+}
+
+.trashCon,
+.checkBoxCon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mails-con {
+  grid-template-columns: 20fr 65fr 15fr;
+  display: grid;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.trashCon {
+  gap: 1.2rem;
+}
+.trashBin-icon {
+  background-color: #d6d6d6 transparent;
+  border-radius: 100px;
+  padding: 0.5rem;
+}
+.trashBin-icon:hover {
+  padding: 0.5rem;
+  background-color: #d6d6d6;
+  border-radius: 100px;
+}
+.mails-conActive {
+  background-color: #fff !important;
+}
+.mails-con {
+  background-color: #e7e7e75e;
+  border: 0.1px solid #77777700;
+  padding: 0.8rem 0.5rem;
+  border-bottom: 0.1px solid #e7e7e75e;
+  cursor: pointer;
+}
+.mails-con:hover {
+  border: 0.1px solid #77777760;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.062);
+}
+/* //////////////// */
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ */
