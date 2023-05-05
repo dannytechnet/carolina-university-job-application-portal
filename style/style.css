@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+scroll body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.7;
   overflow-x: hidden;
   background-color: #f7f7f7;
@@ -13,7 +13,7 @@ body {
   font-weight: 400;
   scroll-behavior: smooth;
 }
-form-img
+ovelay2
 /* LOGIN PAGE STYLE */
 .main {
   position: relative;
@@ -22,7 +22,7 @@ form-img
 .schoolName {
   font-size: 2.4rem;
   line-height: 1.3;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Lato", sans-serif;
   margin-top: 2.4rem;
   text-transform: uppercase;
 }
@@ -33,7 +33,6 @@ form-img
   width: 100%;
   height: 100vh;
   background-color: red transparent;
-
   z-index: 999;
 }
 /* BOOKING SUBMITION CONTAINER */
@@ -49,7 +48,7 @@ form-img
 }
 .check-circle-icon {
   font-size: 3.2rem;
-  color: green;
+  color: #008000;
 }
 .claping-icon {
   font-size: 1.8rem;
@@ -84,7 +83,7 @@ form-img
   padding: 1.4rem;
   z-index: 9999999;
 }
-.bookingMessage-H {
+overview-page-dataPage1 .bookingMessage-H {
   font-size: 2.4rem;
   color: #333;
   margin-top: 1.8rem;
@@ -162,17 +161,17 @@ form-img
 }
 .ovelay2 {
   position: absolute;
-  top: -56px;
+  /* top: -56px; */
   left: 0;
   width: 100%;
   overflow-y: scroll;
-  height: 120vh;
+  height: 100vh;
   background-color: #0000007a;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 9999;
 }
-.appoitnBTN-Con {
+.job-card-con .appoitnBTN-Con {
   display: flex;
   justify-content: center;
   margin-top: 0.8rem;
@@ -191,8 +190,7 @@ form-img
 .appointmentBTN:active {
   box-shadow: inset 0px 0px 1px 4px rgb(230, 152, 7);
 }
-
-.course1,
+job-img .course1,
 .course2,
 .course3,
 .course4 {
@@ -257,6 +255,7 @@ form-img
   /* width: 60%; */
   box-shadow: 9px 9px 30px rgba(0, 0, 0, 0.486);
 }
+
 .calender-con {
   margin-top: 2rem;
 }
@@ -285,10 +284,19 @@ form-img
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: #0f2038;
+  background-color: #002868;
   color: #fff;
-  font-size: 2rem;
-  border: solid 4px orange;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+}
+.cancel-iconAppointment:hover {
+  background-color: #002868;
+}
+.cancel-iconAppointment:active {
+  outline: 3px solid #ffca00;
+  outline-offset: 2px;
+  background-color: #bf0a30;
 }
 .date {
   appearance: none;
@@ -437,7 +445,7 @@ form-img
 .welcome {
   font-size: 2.4rem;
   font-weight: 600;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Lato", sans-serif;
   color: #333;
 }
 .welcomeInstruction {
@@ -473,7 +481,7 @@ form-img
   left: 0;
   width: 15%;
   height: 90vh;
-  background-color: #0f2038;
+  background-color: #002868;
   padding: 4.8rem 0;
   /* overflow-y: scroll; */
 }
@@ -499,6 +507,7 @@ form-img
   width: 8.5rem;
 }
 .user {
+  border: solid 2px orange;
   width: 2rem;
   height: 2rem;
   border-radius: 50px;
@@ -695,7 +704,7 @@ form-img
 }
 .overview-page-dataPage1 {
   background-color: #fff;
-  border: solid 1px #dbdbdbab;
+  border: solid 2px #dbdbdbab;
   display: grid;
   column-gap: 4.8rem;
   row-gap: 3.2rem;
@@ -848,12 +857,13 @@ form-img
   align-items: center;
 }
 /* SCREENING PAGE TWO */
-.screaning-heading {
+.screaning-heading,
+.dsoFAQ-screaning-heading {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1;
-  margin-bottom: 1.6rem;
-  color: rgb(230, 152, 7);
+  margin-bottom: 3.2rem;
+  color: #f7bf09;
 }
 .screaning-contents {
   font-size: 1rem;
@@ -864,7 +874,7 @@ form-img
 .meetingCTA {
   font-size: 1rem;
   padding: 1rem 2.4rem;
-  background-color: rgb(230, 152, 7);
+  background-color: #ffca00;
   color: #0f2038;
   font-weight: 500;
   cursor: pointer;
@@ -875,7 +885,7 @@ form-img
   transition: all 0.3s ease-in-out;
 }
 .meetingCTA:hover {
-  box-shadow: inset 0px 0px 1px 4px rgb(230, 152, 7);
+  box-shadow: inset 0px 0px 1px 4px #ffca00;
 }
 .screening-con {
   display: flex;
@@ -911,7 +921,7 @@ form-img
 }
 .biometric-icon {
   font-size: 3.8rem;
-  color: rgb(230, 152, 7);
+  color: #ffca00;
 }
 .FingerprintCapturedCTA {
   font-size: 1rem;
@@ -920,7 +930,7 @@ form-img
 .FingerprintCaptured-Con {
   display: flex;
   align-items: center;
-  background-color: rgb(230, 152, 7);
+  background-color: #ffca00;
   color: #fff;
   padding: 0 2.4rem;
   border-radius: 6px;
@@ -972,8 +982,9 @@ form-img
   border-bottom: solid 1px #c0c0c0;
 }
 
-.faq-header {
-  font-size: 1rem;
+.faq-header,
+.dso-faq-header {
+  font-size: 1.2rem;
   color: #0f2038;
   font-weight: 600;
   transition: all 0.3s ease-in;
@@ -986,7 +997,8 @@ form-img
   padding-top: 1.4rem;
   padding-bottom: 1.6rem;
 }
-.faq-header-con {
+.faq-header-con,
+.dso-faq-header-con {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1006,13 +1018,23 @@ form-img
 .faq-header-con:hover .faq-header,
 .faq-header-con:hover .faq-header,
 .faq-header-con:hover .faq-header {
-  color: rgb(230, 152, 7);
+  color: #ffca00;
+}
+.dso-faq-header-con:hover .dso-faq-header,
+.dso-faq-header-con:hover .dso-faq-header,
+.dso-faq-header-con:hover .dso-faq-header {
+  color: #ffca00;
 }
 
 .faq-header-con:hover .faq-down-icon1,
 .faq-header-con:hover .faq-down-icon2,
 .faq-header-con:hover .faq-down-icon3 {
-  color: rgb(230, 152, 7);
+  color: #ffca00;
+}
+.dso-faq-header-con:hover .dso-faq-down-icon1,
+.dso-faq-header-con:hover .dso-faq-down-icon2,
+.dso-faq-header-con:hover .dso-faq-down-icon3 {
+  color: #ffca00;
 }
 .faq-down-icon1,
 .faq-down-icon2,
@@ -1025,15 +1047,26 @@ form-img
   padding: 1rem;
   transition: all 0.4s ease;
 }
-.faq-down-icon1Animation {
+.dso-faq-down-icon1,
+.dso-faq-down-icon2,
+.dso-faq-down-icon3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  /* background-color: red; */
+  color: #0f2038;
+  border-radius: 50px;
+  padding: 1rem;
   transition: all 0.4s ease;
-  transform: rotate(180deg);
+}
+.faq-down-icon1Animation {
+  transition: all 0.4s ease !important;
+  transform: rotate(180deg) !important;
 }
 
 .dashBoard-Icon {
   font-size: 1rem;
   margin-right: 1rem;
-  color: rgb(230, 152, 7);
+  color: #ffca00;
 }
 .side-contents:hover {
   background-color: #ffffff2d;
@@ -1046,11 +1079,11 @@ form-img
   padding: 0.5rem 1rem;
   transition: all 0.3s ease-in;
   cursor: pointer;
-  border-top: solid 1px #0f2038;
-  border-bottom: solid 1px #0f2038;
+  border-top: solid 1px #002868;
+  border-bottom: solid 1px #002868;
 }
 .side-contents:hover.side-contents {
-  color: orange;
+  color: #ffca00;
 }
 
 .user-drop-down-layer {
@@ -1131,7 +1164,7 @@ form-img
   align-items: center;
 }
 .Appointment-con2 {
-  background-color: #e67e22;
+  background-color: #ffca00;
   align-items: center;
 }
 .Appointment-con3 {
@@ -1168,10 +1201,10 @@ form-img
 }
 /* SIDE BAR */
 .sideBarHighlighter {
-  background-color: #0f2038;
-  border-top: 1px solid orange;
-  border-bottom: 1px solid orange;
-  box-shadow: 0 0 20px rgba(255, 166, 32, 0.726);
+  background-color: #002868;
+  border-top: 1px solid #ffca00;
+  border-bottom: 1px solid #ffca00;
+  box-shadow: 0 0 20px #ffca00;
   color: #fff !important;
 }
 /* HOME SECTION */
@@ -1214,17 +1247,20 @@ form-img
 }
 .job-card-con {
   display: grid;
+  margin-top: 4.8rem;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
+  row-gap: 3rem;
+  column-gap: 1.6rem;
+  /* gap: 1.6rem; */
 }
 .home-hero-body {
   margin-top: 1.6rem;
   width: 90%;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid rgba(219, 219, 219, 0.67);
+  border: 2px solid rgba(219, 219, 219, 0.67);
   margin-top: 2.4rem;
-  border-radius: 33px;
+  border-radius: 9px;
   padding: 7rem 3rem;
   padding-bottom: 5rem;
   margin-bottom: 2.4rem;
@@ -1240,7 +1276,7 @@ form-img
   background-color: #fff;
   border: 1px solid rgba(219, 219, 219, 0.67);
   margin-top: 2.4rem;
-  border-radius: 33px;
+  border-radius: 9px;
   padding: 2.4rem;
   position: relative;
   margin-bottom: 2.4rem;
@@ -1283,13 +1319,15 @@ form-img
 }
 .main-job-card-con {
   transition: all 0.3s ease;
-  border-radius: 33px;
-  background-color: transparent;
+  border-radius: 11px;
+  background-color: #f7f7f7;
+  /* background-color: transparent; */
 }
 .main-job-card-con:hover {
   transform: translateY(-1rem);
   box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.13);
-  border-radius: 33px;
+  border-radius: 9px;
+  /* background-color: #ffec99; */
 }
 .jobCTA-con {
   display: flex;
@@ -1306,19 +1344,19 @@ form-img
   font-weight: 700;
   cursor: pointer;
   font-size: 1.2rem;
-  border-radius: 33px;
+  border-radius: 9px;
 }
 .job-img {
   width: 100%;
-  border-top-left-radius: 33px;
-  border-top-right-radius: 33px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
   display: block;
 }
 .job-cont-con {
   padding: 1.2rem;
   background-color: #f1f1f1;
-  border-bottom-left-radius: 33px;
-  border-bottom-right-radius: 33px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 .job-header {
   font-size: 1rem;
@@ -1359,7 +1397,7 @@ form-img
   cursor: pointer;
   background-color: #f7f7f7b7;
   padding: 1.8rem;
-  border-radius: 33px;
+  border-radius: 9px;
   cursor: pointer;
   padding-bottom: 1.8rem;
   margin-bottom: 1.6rem;
