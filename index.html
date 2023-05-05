@@ -8,14 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,4000,700;1,100;1,300;1,400&display=swap"
       rel="stylesheet"
     />
     <link
@@ -27,10 +29,43 @@
     <title>Carolina University Student Job App Portal</title>
   </head>
   <body>
-    <!-- chasjcjj -->
-
     <main class="main">
       <div class="ovelay"></div>
+      <!-- DSO MODAL WINDOW -->
+      <div class="dsoModal hidder">
+        <div class="dsoModazl-info-con">
+          <div class="dsoModal-img-con">
+            <img
+              class="dsomodal-img"
+              src="images/dsoimgs/CPT.jpg"
+              alt="CPT image"
+            />
+          </div>
+          <div class="dsoModal-info-content-con">
+            <h2 class="service-card-header">
+              Curricular Practical Training (CPT)
+            </h2>
+            <p class="dsoModal-info-content">
+              CPT provides the opportunity for international students to gain
+              professional training and to work in paid internship positions.
+              The students have the chance to apply for an authorized job and
+              work full-time or part-time with the option of salary or just gain
+              work experience in their area of interest, this will be up to the
+              employer. The training must relate directly to the student’s major
+              area of study and the authorization is for one specific employer
+              and for a specific period of time. One year of full-time CPT
+              eliminates a student’s eligibility for OPT.
+            </p>
+            <button class="dsoModal-btn">CPT Request</button>
+            <ion-icon
+              class="cancel-iconAppointment dsoModalCacel-icon"
+              name="close-outline"
+            ></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <!-- //////////////////////// -->
       <div class="ovelay2 hidder">
         <div class="booking-con">
           <ion-icon
@@ -38,7 +73,7 @@
             name="close-outline"
           ></ion-icon>
           <div class="course-of-meeting-main-con">
-            <span class="metting-label">Reason of meeting </span>
+            <span class="metting-label"> Coures of meeting </span>
             <div class="course-of-meeting-con">
               <div class="meeting-course course1">
                 <ion-icon
@@ -128,7 +163,7 @@
                 />
               </div>
               <div class="job-uploader-info">
-                <p class="job-uploader-name">David Shutt</p>
+                <p class="job-uploader-name">Dr. Yunus Tasha</p>
                 <p class="job-uploader-post">Administrative Supervisor</p>
               </div>
             </div>
@@ -248,7 +283,7 @@
           ></ion-icon>
         </div>
       </div>
-      <div class="student-login-page hidder">
+      <div class="student-login-page">
         <nav class="top-navigation">
           <img class="logo" src="/images/logo.png" alt="" />
           <div class="navigation-search-con">
@@ -270,7 +305,7 @@
             ></i>
             <img class="user" src="/images/faces/frace11.jpg" alt="" />
             <div class="user-name-con">
-              <p class="user-name-tag">Daniel Dazong</p>
+              <p class="user-name-tag">Chris Timi</p>
               <div class="drop-down-icon-con">
                 <i class="user-drop-down fa-solid fa-sort-down"></i>
                 <i class="user-drop-up fa-solid fa-sort-up"></i>
@@ -304,15 +339,16 @@
             <p class="side-contents dashBoardBTN sideBarHighlighter">
               <i class="dashBoard-Icon fa-regular fa-gauge-max"></i>Dashboard
             </p>
-            <div class="side-contents notificationBTN">
+            <!-- <div class="side-contents notificationBTN">
               <i class="dashBoard-Icon fa-solid fa-envelope"></i>
               Inbox
-            </div>
+            </div> -->
+
             <p class="side-contents AvailableJobsBTN">
               <i class="dashBoard-Icon fa-solid fa-chair-office"></i> Available
               Jobs
             </p>
-            <p class="side-contents DSOBTN">
+            <p class="side-contents dsoBtn">
               <i class="dashBoard-Icon fa-duotone fa-user-tie-hair"></i>DSO
               Office
             </p>
@@ -322,6 +358,7 @@
           </div>
         </aside>
         <div class="main-page">
+          <!-- DASHBOAED SECTION -->
           <div class="dashboard-section">
             <ul class="dash-board-navigations">
               <div class="dashBoardLinkCon">
@@ -337,7 +374,7 @@
                 <div class="dash-boardHighlighter3"></div>
               </div>
               <div class="dashBoardLinkCon">
-                <li class="dash-board-nav-links4">Employment</li>
+                <li class="dash-board-nav-links4">Employement</li>
                 <div class="dash-boardHighlighter4"></div>
               </div>
               <div class="dashBoardLinkCon">
@@ -366,15 +403,15 @@
                 <div class="overview-page-dataPage1">
                   <div class="info-con">
                     <span class="info-label">Surname</span>
-                    <p class="main-info surname">David</p>
+                    <p class="main-info surname">Ayoko</p>
                   </div>
                   <div class="info-con">
                     <span class="info-label"> First Name</span>
-                    <p class="main-info FirstName">Daniel</p>
+                    <p class="main-info FirstName">Chris</p>
                   </div>
                   <div class="info-con">
                     <span class="info-label"> Other Names</span>
-                    <p class="main-info OtherNames">Numaweh</p>
+                    <p class="main-info OtherNames">Timi</p>
                   </div>
                   <div class="info-con">
                     <span class="info-label">Date Of Birth</span>
@@ -390,11 +427,11 @@
                   </div>
                   <div class="info-con">
                     <span class="info-label">Course</span>
-                    <p class="main-info Course">Data Science</p>
+                    <p class="main-info Course">Ceyber Security</p>
                   </div>
                   <div class="info-con">
                     <span class="info-label">Level</span>
-                    <p class="main-info Level">Masters</p>
+                    <p class="main-info Level">300L</p>
                   </div>
                 </div>
                 <div class="overview-page-dataPage2">
@@ -416,7 +453,7 @@
                       <i
                         class="clalenderIcon fa-solid fa-regular fa-file-slash"
                       ></i
-                      >Cancel Application
+                      >Cancle Application
                     </button>
                   </div>
                 </div>
@@ -444,7 +481,7 @@
                 <div class="overview-page-dataPage4">
                   <h2 class="screaning-heading">Update</h2>
 
-                  <p class="update-message-salutation">Dear Daniel,</p>
+                  <p class="update-message-salutation">Dear Christian,</p>
                   <p class="updateMessageContent">
                     We hope this message finds you well. We wanted to provide
                     you with an update on the status of your application for the
@@ -578,14 +615,12 @@
                   />
                 </div>
                 <div class="name-datas">
-                  <p class="profileName">Daniel Numaweh Dazong</p>
-                  <p class="mailAddress">dazongd@carolinau.edu</p>
-                  <p class="adminNumber">1065664</p>
+                  <p class="profileName">Ayoko Chris Timi</p>
+                  <p class="mailAddress">ayokotimilehin@gmail.com</p>
+                  <p class="adminNumber">UC2021/2221</p>
                   <div class="appliedPost-con">
                     <span class="postTag">Post Apllied for</span>
-                    <p class="positionAppliedFor">
-                      Student Employment Assistant
-                    </p>
+                    <p class="positionAppliedFor">Officce Assistance</p>
                     <div class="employement-status-con">
                       <i class="employemeny-icon fa-solid fa-user-tie"></i>
                       <p class="employement-status">Not yet Employed</p>
@@ -595,6 +630,7 @@
               </div>
             </div>
           </div>
+          <!-- HOME SECTION -->
           <div class="home-Section">
             <div class="home-section-header">
               <img src="/images/logo1.webp" alt="" class="home-img" />
@@ -602,56 +638,6 @@
             <div class="home-hero-body">
               <!-- <h3 class="job-con-header">Newly-Open-Position</h3> -->
               <div class="job-card-con">
-                <!--sample cards open-->
-                <div class="main-job-card-con">
-                  <img
-                    src="/images/positionIMG/studentAssistan.jpg"
-                    alt=""
-                    class="job-img"
-                  />
-                  <div class="job-cont-con">
-                    <p class="job-header">STUDENT EMPLOYMENT ASSISTANT</p>
-                    <p class="job-brief-descrp">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing
-                    </p>
-                    <div class="jobCTA-con">
-                      <button class="jobCTA">See more &rightarrow;</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="main-job-card-con">
-                  <img
-                    src="/images/positionIMG/studentAssistan.jpg"
-                    alt=""
-                    class="job-img"
-                  />
-                  <div class="job-cont-con">
-                    <p class="job-header">MATHS TUTOR</p>
-                    <p class="job-brief-descrp">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing
-                    </p>
-                    <div class="jobCTA-con">
-                      <button class="jobCTA">See more &rightarrow;</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="main-job-card-con">
-                  <img
-                    src="/images/positionIMG/studentAssistan.jpg"
-                    alt=""
-                    class="job-img"
-                  />
-                  <div class="job-cont-con">
-                    <p class="job-header">TEACHING ASSISTANT</p>
-                    <p class="job-brief-descrp">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing
-                    </p>
-                    <div class="jobCTA-con">
-                      <button class="jobCTA">See more &rightarrow;</button>
-                    </div>
-                  </div>
-                </div>
-                <!--sample card close-->
                 <div class="main-job-card-con">
                   <img
                     src="/images/positionIMG/studentAssistan.jpg"
@@ -709,6 +695,7 @@
               </div>
             </div>
           </div>
+          <!-- AVAILABLE JOBS SECTION -->
           <div class="availableJob-Section hidder">
             <div class="home-section-header">
               <img src="/images/logo1.webp" alt="" class="home-img" />
@@ -853,7 +840,11 @@
               </div>
             </div>
           </div>
-          <div class="notification-section">
+          <!-- ///////////////////////////////////////// -->
+          <!-- INBOX/ SECTIONS (IN JAVA SCRIPT INBOX CODE ARE NAMED notificationCon) -->
+          <!-- ///////////////////////////////////////// -->
+
+          <!-- <div class="notification-section">
             <div class="notification-section-con">
               <div class="notification-search">
                 <div>
@@ -894,13 +885,13 @@
                     <div class="messagies-con">
                       <div class="checkBoxCon">
                         <input type="checkbox" class="checkBox" />
-                        <p class="senderName">David Shutt</p>
+                        <p class="senderName">Dr. Yunus Tasha</p>
                       </div>
                     </div>
                     <div>
                       <p class="messageSumary">
-                        Congratulations DANIEL DAZONG you are offered an
-                        appointment as Student Employment Assisstant
+                        Congratulations CHRIS TIMI you are offered an
+                        appointment as Officce Assistance
                       </p>
                     </div>
                     <div class="trashCon">
@@ -912,7 +903,7 @@
                     <div class="messagies-con">
                       <div class="checkBoxCon">
                         <input type="checkbox" class="checkBox" />
-                        <p class="senderName">David Shutt</p>
+                        <p class="senderName">Dr. Yunus Tasha</p>
                       </div>
                     </div>
                     <div>
@@ -930,7 +921,7 @@
                     <div class="messagies-con">
                       <div class="checkBoxCon">
                         <input type="checkbox" class="checkBox" />
-                        <p class="senderName">David Shutt</p>
+                        <p class="senderName">Dr. Yunus Tasha</p>
                       </div>
                     </div>
                     <div>
@@ -947,7 +938,7 @@
                     <div class="messagies-con">
                       <div class="checkBoxCon">
                         <input type="checkbox" class="checkBox" />
-                        <p class="senderName">David Shutt</p>
+                        <p class="senderName">Dr. Yunus Tasha</p>
                       </div>
                     </div>
                     <div>
@@ -964,7 +955,7 @@
                     <div class="messagies-con">
                       <div class="checkBoxCon">
                         <input type="checkbox" class="checkBox" />
-                        <p class="senderName">David Shutt</p>
+                        <p class="senderName">Dr. Yunus Tasha</p>
                       </div>
                     </div>
                     <div>
@@ -981,7 +972,7 @@
                     <div class="messagies-con">
                       <div class="checkBoxCon">
                         <input type="checkbox" class="checkBox" />
-                        <p class="senderName">David Shutt</p>
+                        <p class="senderName">Dr. Yunus Tasha</p>
                       </div>
                     </div>
                     <div>
@@ -998,7 +989,7 @@
                     <div class="messagies-con">
                       <div class="checkBoxCon">
                         <input type="checkbox" class="checkBox" />
-                        <p class="senderName">David Shutt</p>
+                        <p class="senderName">Dr. Yunus Tasha</p>
                       </div>
                     </div>
                     <div>
@@ -1015,7 +1006,7 @@
                     <div class="messagies-con">
                       <div class="checkBoxCon">
                         <input type="checkbox" class="checkBox" />
-                        <p class="senderName">David Shutt</p>
+                        <p class="senderName">Dr. Yunus Tasha</p>
                       </div>
                     </div>
                     <div>
@@ -1102,10 +1093,421 @@
               </div>
             </div>
             <div class="overlayBg"></div>
+          </div> -->
+          <!-- DSO SECTION -->
+          <div class="dso-section">
+            <div class="dso-hero">
+              <div class="dso-hero-img1"></div>
+              <div class="dso-hero-img2 hidder"></div>
+              <div class="dso-hero-img3 hidder"></div>
+              <div class="dso-hero-img4 hidder"></div>
+              <div class="dso-hero-text">
+                <h1 class="dso-header">DSO Office</h1>
+              </div>
+              <ul class="dscNav">
+                <li class="dso-nav-list dsoHomeNav">Home</li>
+                <li class="dso-nav-list dsoService">Services</li>
+                <li class="dso-nav-list dsoTravel">Travel</li>
+                <li class="dso-nav-list dsoFAQs">FAQs</li>
+                <div class="dso-form-drop-menu-con">
+                  <li class="dso-nav-list dsoFormLink">
+                    Forms
+                    <i class="fa-solid fa-chevron-down drop-down-icon"></i>
+                  </li>
+                  <ul class="dso-form-drop-menu">
+                    <li class="form-fdrop-down-list">
+                      Travel Authorization Form
+                    </li>
+                    <li class="form-fdrop-down-list">Annual Vacation Form</li>
+                    <li class="form-fdrop-down-list">
+                      Dependent Application
+                      <form></form>
+                    </li>
+                    <li class="form-fdrop-down-list">Reduced Course Load</li>
+                    <li class="form-fdrop-down-list">Transfer Form</li>
+                    <li class="form-fdrop-down-list">Transfer Form</li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+
+            <!-- DSO CARDS -->
+            <div class="dso-hero-body">
+              <p class="dso-sub-header">
+                The DSO Office is the main point of contact for issues related
+                to your SEVIS record (Form I-20). Designated School Officials
+                serve as liaisons between international students, the school,
+                and the U.S. government. DSOs issue necessary immigration forms,
+                and guide students through the process of studying in the U.S.
+                The DSO Office will assist you to update your student record and
+                help you maintain your student status by providing advice or
+                helping you fill out important forms.
+              </p>
+              <!-- <h3 class="job-con-header">Newly-Open-Position</h3> -->
+
+              <div class="job-card-con homeCardSection">
+                <div class="main-job-card-con dsohome-card">
+                  <img
+                    src="/images/dsoimgs/card1.webp"
+                    alt=""
+                    class="job-img"
+                  />
+                  <div class="job-cont-con dso-card1">
+                    <div class="jobCTA-con">
+                      <button class="jobCTA btnblue dsoTravel">
+                        Travel&rightarrow;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="main-job-card-con dsohome-card">
+                  <img
+                    src="/images/dsoimgs/card2.webp"
+                    alt=""
+                    class="job-img"
+                  />
+                  <div class="job-cont-con dso-card2">
+                    <div class="jobCTA-con">
+                      <button class="jobCTA btnblue dsoService">
+                        Services&rightarrow;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-job-card-con dsohome-card">
+                  <img src="/images/dsoimgs/CPT.webp" alt="" class="job-img" />
+                  <div class="job-cont-con dso-card3">
+                    <div class="jobCTA-con">
+                      <button class="jobCTA btnblue dsoFAQsCTA">
+                        FAQs&rightarrow;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="job-card-con servicesCardSection">
+                <!-- SERVICES FEATURE  CARD -->
+                <div class="main-job-card-con services-card hidder">
+                  <img src="/images/dsoimgs/CPT.webp" alt="" class="job-img" />
+
+                  <div class="jobCTA-con">
+                    <button class="jobCTA btnblue btnService">
+                      CPT Request
+                    </button>
+                  </div>
+                </div>
+
+                <div class="main-job-card-con services-card hidder">
+                  <img src="/images/dsoimgs/OPT.webp" alt="" class="job-img" />
+
+                  <div class="jobCTA-con">
+                    <button class="jobCTA btnblue btnService">
+                      OPT Request
+                    </button>
+                  </div>
+                </div>
+                <div class="main-job-card-con services-card hidder">
+                  <img src="/images/dsoimgs/RCL.webp" alt="" class="job-img" />
+
+                  <div class="jobCTA-con">
+                    <button class="jobCTA btnblue btnService">
+                      RLC Request
+                    </button>
+                  </div>
+                </div>
+                <div class="main-job-card-con services-card hidder">
+                  <img
+                    src="/images/dsoimgs/AuthorizedEarlyWithdrawal.webp"
+                    alt=""
+                    class="job-img"
+                  />
+
+                  <div class="jobCTA-con">
+                    <button class="jobCTA btnblue btnService">
+                      Authorized Withdrawal Request
+                    </button>
+                  </div>
+                </div>
+                <div class="main-job-card-con services-card hidder">
+                  <img
+                    src="/images/dsoimgs/DependentApplication.webp"
+                    alt=""
+                    class="job-img"
+                  />
+
+                  <div class="jobCTA-con">
+                    <button class="jobCTA btnblue btnService">
+                      Dependent Request
+                    </button>
+                  </div>
+                </div>
+                <div class="main-job-card-con services-card hidder">
+                  <img
+                    src="/images/dsoimgs/TransferToAnother.webp"
+                    alt=""
+                    class="job-img"
+                  />
+
+                  <div class="jobCTA-con">
+                    <button class="jobCTA btnblue btnService">
+                      Transfer Request
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="dsoFAQs-section-con">
+                <h2 class="dsoFAQ-screaning-heading">
+                  Frequently Asked Questions
+                </h2>
+                <div class="dso-faq-con">
+                  <div class="dso-faq-header-con">
+                    <h3 class="dso-faq-header">What is "status"?</h3>
+                    <i class="dso-faq-down-icon1 fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div class="dso-faq-answer-cons1">
+                    <p class="faq-answer">
+                      As an F-1 student, "status" refers to the requirements to
+                      stay in compliance with the Student and Visitor Exchange
+                      Program (SEVP). Violations of this "status" may result in
+                      the removal from the SEVP. Students are expected to follow
+                      all rules and regulations set forth by the SEVP and the
+                      U.S. Department of State.
+                    </p>
+                  </div>
+                </div>
+                <div class="dso-faq-con">
+                  <div class="dso-faq-header-con">
+                    <h3 class="dso-faq-header">How do I maintain "status"?</h3>
+                    <i class="dso-faq-down-icon2 fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div class="dso-faq-answer-cons2">
+                    <p class="answer-header">Full Course of Study:</p>
+                    <p class="answer-header-content">
+                      F-1 students are expected to enroll in a
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                      _blank"
+                        class="full-courseOfS"
+                        >full-course</a
+                      >
+                      of study and must make normal progress towards completion
+                      of their program. A
+                      <a
+                        href="https://studyinthestates.dhs.gov/students/study/full-course-of-study"
+                        target="
+                      _blank"
+                        class="full-courseOfS"
+                        >full-course</a
+                      >
+                      of study is defined as:
+                    </p>
+                    <p class="answer-header">Undergraduates:</p>
+                    <ul class="answer-header-con-list-con">
+                      <li class="faq-list">12 Credit Hours</li>
+                    </ul>
+                    <p class="answer-header">Graduates:</p>
+                    <ul class="answer-header-con-list-con">
+                      <li class="faq-list">9 Credit Hours</li>
+                    </ul>
+                    <p class="answer-header">PhD Candidates:</p>
+                    <ul class="answer-header-con-list-con">
+                      <li class="faq-list">6 Credit Hours</li>
+                    </ul>
+                    <p class="answer-header-content">
+                      Only ONE 3-credit course may be taken online per semester
+                      to count towards a
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                      _blank"
+                        class="full-courseOfS"
+                        >full-course of study</a
+                      >
+                      . If a student is in their final semester with only one
+                      course remaining, it must be taken in person. Further,
+                      international students must be physically present in the
+                      United States for any online classes to be counted towards
+                      a
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                      _blank"
+                        class="full-courseOfS"
+                        >full-course of study</a
+                      >
+                      requirement.
+                    </p>
+                    <p class="answer-header-content">
+                      Under certain circumstances, students may be eligible for
+                      a
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                      _blank"
+                        class="full-courseOfS"
+                        >Reduced Course Load
+                      </a>
+                      or
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                      _blank"
+                        class="full-courseOfS"
+                      >
+                        RCL</a
+                      >
+                      . This must be approved by the DSO PRIOR to a student
+                      dropping classes or taking less than a full time course
+                      load.
+                    </p>
+                    <p class="answer-header">Employment Regulations</p>
+                    <p class="answer-header-content">
+                      Students on an F-1 visa are eligible to work
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                      _blank"
+                        class="full-courseOfS"
+                      >
+                        on-campus</a
+                      >
+                      up to 20 hours per week while school is in session, and up
+                      to full-time while on
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                        _blank"
+                        class="full-courseOfS"
+                      >
+                        oschool breaks</a
+                      >
+                      or during
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                         _blank"
+                        class="full-courseOfS"
+                      >
+                        annual vacation</a
+                      >
+                      . It is the student's responsibility to carefully monitor
+                      the number of hours they are working each week, as a
+                      violation of working hours can result in a
+                      <a
+                        href="https://www.ice.gov/sevis/employment"
+                        target="
+                         _blank"
+                        class="full-courseOfS"
+                      >
+                        termination</a
+                      >
+                      of the student's status.
+                    </p>
+                  </div>
+                </div>
+                <div class="dso-faq-con">
+                  <div class="dso-faq-header-con">
+                    <h3 class="dso-faq-header">
+                      International Student Employment
+                    </h3>
+                    <i class="dso-faq-down-icon3 fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div class="dso-faq-answer-cons3">
+                    <div class="faq-answer">
+                      <p class="answer-header">Student Employment</p>
+                      <p class="answer-header-content">
+                        Students on an F-1 visa are eligible to work on-campus
+                        up to 20 hours per week while school is in session, and
+                        up to full-time while on school breaks or during annual
+                        vacation. It is the student's responsibility to
+                        carefully monitor the number of hours they are working
+                        each week, as a violation of working hours can result in
+                        a termination of the student's status.
+                      </p>
+                      <p class="answer-header">On-Campus Employment</p>
+                      <p class="answer-header-content">
+                        On-Campus employment is categorized as work that is done
+                        on school premises for Carolina University or for an
+                        approved vendor. Once approved for work-study,
+                        international students can apply for a Social Security
+                        Card for work purposes. Students must follow all
+                        employment rules and regulations to avoid any violations
+                        of F-1 status for unauthorized employment.
+                      </p>
+                      <p class="answer-header-content">
+                        International Students Must Adhere to the Following
+                        Regulations:
+                      </p>
+                      <ul class="answer-header-con-list-con">
+                        <li class="faq-list">
+                          Students may only work up to 20 hours per week while
+                          school is in session
+                        </li>
+                        <li class="faq-list">
+                          Students may only work up to full-time per week while
+                          on school breaks or annual vacation
+                        </li>
+                        <li class="faq-list">
+                          Students must report any work to their DSO and
+                          work-study office and must apply for a Social Security
+                          Number (if eligible)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job-card-con travelCardSection hidder">
+                <!-- TRAVELS FEATURE  CARD -->
+                <div class="main-job-card-con travel-card">
+                  <img
+                    src="/images/dsoimgs/travelAuthorization.webp"
+                    alt=""
+                    class="job-img"
+                  />
+
+                  <div class="jobCTA-con">
+                    <button class="jobCTA btnblue btnService">
+                      CPT Request
+                    </button>
+                  </div>
+                </div>
+
+                <div class="main-job-card-con travel-card">
+                  <img
+                    src="/images/dsoimgs/AnnualEarnedVacation.webp"
+                    alt=""
+                    class="job-img"
+                  />
+
+                  <div class="jobCTA-con">
+                    <button class="jobCTA btnblue btnService">
+                      OPT Request
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="jobCTA-viewall-con">
+                <button class="jobCTA view-allCTA">Schedule a Meeting</button>
+              </div>
+            </div>
+            <div class="footer">
+              <p class="footer-contents">
+                &copy; Carolina University. All rights Reserved
+              </p>
+              <div class="footer-icon-section">
+                <i class="fa-brands fa-facebook footer-icons"></i>
+                <i class="fa-brands fa-square-instagram footer-icons"></i>
+                <i class="fa-brands fa-square-twitter footer-icons"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="login-page">
+      <div class="login-page hidder">
         <div class="img-logo-main-con">
           <img src="/images/logo2.png" alt="CU logo" class="login-img" />
           <p class="schoolName">
@@ -1173,6 +1575,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="script/script.js"></script>
+    <script src="/script/script.js"></script>
   </body>
 </html>
