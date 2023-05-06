@@ -7,8 +7,10 @@ let courseOfMeeting = "";
 let timeSetter = "";
 let timeTRacker = 0;
 let meetinPurposeTracker = 0;
-
 // DASH BOARD HIGHLIGHTER VARIABLES
+const signUppageOverlay = document.querySelector(".SignUp-ovelay");
+const signUppage = document.querySelector(".Signup");
+const footerSection = document.querySelector(".footer");
 const dashBoardHighlighter1 = document.querySelector(".dash-boardHighlighter1");
 const homeSectionHeroIMG = document.querySelector(".home-section-header");
 const dashBoardHighlighter2 = document.querySelector(".dash-boardHighlighter2");
@@ -73,6 +75,12 @@ dsoFormLink.addEventListener("click", function () {
   dsoFormdropDow.classList.toggle("dso-dropdown");
 });
 
+// SIGNUP PAGE
+signUppage.addEventListener("click", function () {
+  signUppageOverlay.classList.remove("hidder");
+  loginPAge.classList.add("hidder");
+  console.log("uuu");
+});
 // DSO HOME SECTION
 
 dsoHomeNav.addEventListener("click", function () {
@@ -86,11 +94,14 @@ dsoHomeNav.addEventListener("click", function () {
   dsoSubHeaderText.classList.remove("hidder");
   dsoHero3.classList.add("hidder");
   dsoHero4.classList.add("hidder");
+  footerSection.classList.remove("hidder");
   for (let l = 0; l < dsoHomecard.length; l++) {
     dsoHomecard[l].classList.remove("hidder");
   }
   dsoSubHeaderText.textContent = `The DSO Office is the main point of contact for issues related to your SEVIS record (Form I-20). Designated School Officials serve as liaisons between international students, the school, and the U.S. government. DSOs issue necessary immigration forms, and guide students through the process of studying in the U.S. The DSO Office will assist you to update your student record and help you maintain your student status by providing advice or helping you fill out important forms.`;
 });
+
+// FAQ section
 
 const dsoFAQLink = document.querySelector(".dsoFAQs");
 for (let i = 0; i < dsoServiceNav.length; i++) {
@@ -106,6 +117,8 @@ for (let i = 0; i < dsoServiceNav.length; i++) {
     dsoHero3.classList.add("hidder");
     dsoHeaderText.textContent = "SERVICES";
     dsoSubHeaderText.classList.add("hidder");
+    footerSection.classList.remove("hidder");
+
     for (let k = 0; k < servicesCard.length; k++) {
       servicesCard[k].classList.remove("hidder");
 
@@ -182,9 +195,9 @@ for (let i = 0; i < dsoTravelsNav.length; i++) {
     dsoHero3.classList.remove("hidder");
     dsoHeaderText.textContent = "TRAVELS";
     dsoFAQSection.classList.add("hidder");
-
     travelSection.classList.remove("hidder");
     dsoSubHeaderText.classList.remove("hidder");
+    footerSection.classList.remove("hidder");
     dsoSubHeaderText.textContent = `All international students are allowed to travel in the U.S. or travel internationally, or a combination of both. They are also expected to enroll every semester in a full-course of study to maintain their F1 status. They must register the required credits according to their level of education and attend all classes, and maintain normal academic progress.`;
   });
 }
@@ -202,6 +215,7 @@ dsoFAQLink.addEventListener("click", function () {
   dsoHero4.classList.remove("hidder");
   servicesCardSection.classList.add("hidders");
   dsoFAQSection.classList.remove("hidder");
+  footerSection.classList.remove("hidder");
 });
 // DSO CTA CLASSES
 
@@ -313,6 +327,7 @@ dsoBtnOffice.addEventListener("click", function () {
   dsoBtnOffice.classList.add("sideBarHighlighter");
   HomeSection.classList.add("hidder");
   dashBoardSection.classList.add("hidder");
+  footerSection.classList.remove("hidder");
   // notificationCon.classList.add("hidder");
   dscPage.classList.remove("hidder");
 });
@@ -530,6 +545,7 @@ const droDownMenuAnimation = document.querySelector(".user-drop-down-layer");
 let overlayAdder = 1;
 const dropUpicon = document.querySelector(".user-drop-up");
 const overlays = document.querySelector(".ovelay");
+
 dropUpicon.classList.add("hidder");
 overlays.classList.add("hidder");
 droDownMenuAnimation.classList.add("hidder");
