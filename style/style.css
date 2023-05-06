@@ -185,12 +185,19 @@ overview-page-dataPage1 .bookingMessage-H {
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: 600;
+  text-align: center;
+}
+.appoitnBTN-Con {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 .appointmentBTN:hover,
 .appointmentBTN:active {
   box-shadow: inset 0px 0px 1px 4px rgb(230, 152, 7);
 }
-job-img .course1,
+
+.course1,
 .course2,
 .course3,
 .course4 {
@@ -326,6 +333,8 @@ job-img .course1,
   justify-content: center;
   width: 70%;
 }
+
+/* LOGIN PAGE */
 .login-img {
   margin-top: 4.4rem;
   width: 16%;
@@ -357,6 +366,11 @@ job-img .course1,
   gap: 0.6rem;
   align-items: center;
 }
+.submit {
+  font-size: 1rem;
+  color: #0097a7;
+  font-weight: 500;
+}
 .remember-Con {
   cursor: pointer;
 }
@@ -364,6 +378,7 @@ job-img .course1,
   cursor: pointer;
 }
 .checkBox-Text {
+  color: #0097a7;
   font-size: 1rem;
 }
 .form-info-con {
