@@ -1,6 +1,5 @@
 # carolina-university-job-application-portal
 
-#Hello Team,
-DSO section update
+#Final Debuging
 
 #More update will be uploaded today
