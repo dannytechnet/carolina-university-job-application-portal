@@ -474,8 +474,8 @@ overview-page-dataPage1 .bookingMessage-H {
   margin-bottom: 1.6rem;
   background-color: #002868;
   padding: 1.4rem;
-  /* border-top-left-radius: 33px; */
-  border-bottom-left-radius: 33px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
 .googleIcon {
   width: 1.8rem;
