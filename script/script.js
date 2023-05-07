@@ -70,6 +70,7 @@ const dsoFAQSection = document.querySelector(".dsoFAQs-section-con");
 dsoFAQSection.classList.add("hidder");
 
 const dsoFormLink = document.querySelector(".dsoFormLink");
+const backToLoginPage = document.querySelector(".backTologin");
 const dsoFormdropDow = document.querySelector(".dso-form-drop-menu");
 dsoFormLink.addEventListener("click", function () {
   dsoFormdropDow.classList.toggle("dso-dropdown");
@@ -81,6 +82,11 @@ signUppage.addEventListener("click", function () {
   loginPAge.classList.add("hidder");
   console.log("uuu");
 });
+backToLoginPage.addEventListener("click", function () {
+  signUppageOverlay.classList.add("hidder");
+  loginPAge.classList.remove("hidder");
+});
+
 // DSO HOME SECTION
 
 dsoHomeNav.addEventListener("click", function () {
